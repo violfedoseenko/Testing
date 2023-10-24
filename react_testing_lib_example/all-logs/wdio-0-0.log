@@ -1,0 +1,181 @@
+2023-10-24T15:00:50.828Z INFO @wdio/local-runner: Run worker command: run
+2023-10-24T15:00:51.147Z INFO webdriver: Initiate new session using the WebDriver protocol
+2023-10-24T15:00:51.147Z INFO @wdio/utils: Connecting to existing driver at http://localhost:9515/
+2023-10-24T15:00:51.371Z INFO webdriver: [POST] http://localhost:9515/session
+2023-10-24T15:00:51.371Z INFO webdriver: DATA {
+  capabilities: {
+    alwaysMatch: {
+      browserName: 'chrome',
+      acceptInsecureCerts: true,
+      'goog:chromeOptions': [Object]
+    },
+    firstMatch: [ {} ]
+  },
+  desiredCapabilities: {
+    browserName: 'chrome',
+    acceptInsecureCerts: true,
+    'goog:chromeOptions': { args: [Array], extensions: [] }
+  }
+}
+2023-10-24T15:00:52.872Z INFO webdriver: COMMAND navigateTo("http://localhost:3000/hello")
+2023-10-24T15:00:52.872Z INFO webdriver: [POST] http://localhost:9515/session/845ae318096d04310e98f944b445f555/url
+2023-10-24T15:00:52.872Z INFO webdriver: DATA { url: 'http://localhost:3000/hello' }
+2023-10-24T15:00:57.440Z INFO webdriver: RESULT null
+2023-10-24T15:00:57.443Z INFO webdriver: COMMAND findElement("css selector", "#search")
+2023-10-24T15:00:57.443Z INFO webdriver: [POST] http://localhost:9515/session/845ae318096d04310e98f944b445f555/element
+2023-10-24T15:00:57.443Z INFO webdriver: DATA { using: 'css selector', value: '#search' }
+2023-10-24T15:00:57.464Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '1561287C01655D3960DFD21D907205F4_element_2'
+}
+2023-10-24T15:00:57.473Z INFO webdriver: COMMAND elementClear("1561287C01655D3960DFD21D907205F4_element_2")
+2023-10-24T15:00:57.474Z INFO webdriver: [POST] http://localhost:9515/session/845ae318096d04310e98f944b445f555/element/1561287C01655D3960DFD21D907205F4_element_2/clear
+2023-10-24T15:00:57.554Z INFO webdriver: RESULT null
+2023-10-24T15:00:57.555Z INFO webdriver: COMMAND elementSendKeys("1561287C01655D3960DFD21D907205F4_element_2", "hello")
+2023-10-24T15:00:57.555Z INFO webdriver: [POST] http://localhost:9515/session/845ae318096d04310e98f944b445f555/element/1561287C01655D3960DFD21D907205F4_element_2/value
+2023-10-24T15:00:57.555Z INFO webdriver: DATA { text: 'hello' }
+2023-10-24T15:00:57.621Z INFO webdriver: RESULT null
+2023-10-24T15:00:57.622Z INFO webdriver: COMMAND findElement("css selector", "#toggle")
+2023-10-24T15:00:57.622Z INFO webdriver: [POST] http://localhost:9515/session/845ae318096d04310e98f944b445f555/element
+2023-10-24T15:00:57.622Z INFO webdriver: DATA { using: 'css selector', value: '#toggle' }
+2023-10-24T15:00:57.638Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '1561287C01655D3960DFD21D907205F4_element_4'
+}
+2023-10-24T15:00:57.642Z INFO webdriver: COMMAND elementClick("1561287C01655D3960DFD21D907205F4_element_4")
+2023-10-24T15:00:57.643Z INFO webdriver: [POST] http://localhost:9515/session/845ae318096d04310e98f944b445f555/element/1561287C01655D3960DFD21D907205F4_element_4/click
+2023-10-24T15:00:57.786Z INFO webdriver: RESULT null
+2023-10-24T15:00:57.788Z INFO webdriver: COMMAND findElement("css selector", "#hello")
+2023-10-24T15:00:57.788Z INFO webdriver: [POST] http://localhost:9515/session/845ae318096d04310e98f944b445f555/element
+2023-10-24T15:00:57.788Z INFO webdriver: DATA { using: 'css selector', value: '#hello' }
+2023-10-24T15:00:57.804Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '1561287C01655D3960DFD21D907205F4_element_6'
+}
+2023-10-24T15:00:57.807Z INFO webdriver: COMMAND findElements("css selector", "#hello")
+2023-10-24T15:00:57.808Z INFO webdriver: [POST] http://localhost:9515/session/845ae318096d04310e98f944b445f555/elements
+2023-10-24T15:00:57.808Z INFO webdriver: DATA { using: 'css selector', value: '#hello' }
+2023-10-24T15:00:57.822Z INFO webdriver: RESULT [
+  {
+    'element-6066-11e4-a52e-4f735466cecf': '1561287C01655D3960DFD21D907205F4_element_6'
+  }
+]
+2023-10-24T15:00:57.828Z INFO webdriver: COMMAND findElement("css selector", "#toggle")
+2023-10-24T15:00:57.828Z INFO webdriver: [POST] http://localhost:9515/session/845ae318096d04310e98f944b445f555/element
+2023-10-24T15:00:57.828Z INFO webdriver: DATA { using: 'css selector', value: '#toggle' }
+2023-10-24T15:00:57.840Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '1561287C01655D3960DFD21D907205F4_element_4'
+}
+2023-10-24T15:00:57.843Z INFO webdriver: COMMAND elementClick("1561287C01655D3960DFD21D907205F4_element_4")
+2023-10-24T15:00:57.843Z INFO webdriver: [POST] http://localhost:9515/session/845ae318096d04310e98f944b445f555/element/1561287C01655D3960DFD21D907205F4_element_4/click
+2023-10-24T15:00:57.872Z INFO webdriver: RESULT null
+2023-10-24T15:00:57.873Z INFO webdriver: COMMAND findElement("css selector", "#hello")
+2023-10-24T15:00:57.873Z INFO webdriver: [POST] http://localhost:9515/session/845ae318096d04310e98f944b445f555/element
+2023-10-24T15:00:57.873Z INFO webdriver: DATA { using: 'css selector', value: '#hello' }
+2023-10-24T15:00:57.884Z INFO webdriver: RESULT {
+  error: 'no such element',
+  message: 'no such element: Unable to locate element: {"method":"css selector","selector":"#hello"}\n' +
+    '  (Session info: chrome=118.0.5993.89)',
+  stacktrace: '\tGetHandleVerifier [0x00007FF6E36F8EF2+54786]\n' +
+    '\t(No symbol) [0x00007FF6E3665612]\n' +
+    '\t(No symbol) [0x00007FF6E351A64B]\n' +
+    '\t(No symbol) [0x00007FF6E355B79C]\n' +
+    '\t(No symbol) [0x00007FF6E355B91C]\n' +
+    '\t(No symbol) [0x00007FF6E3596D87]\n' +
+    '\t(No symbol) [0x00007FF6E357BEAF]\n' +
+    '\t(No symbol) [0x00007FF6E3594D02]\n' +
+    '\t(No symbol) [0x00007FF6E357BC43]\n' +
+    '\t(No symbol) [0x00007FF6E3550941]\n' +
+    '\t(No symbol) [0x00007FF6E3551B84]\n' +
+    '\tGetHandleVerifier [0x00007FF6E3A47F52+3524194]\n' +
+    '\tGetHandleVerifier [0x00007FF6E3A9D800+3874576]\n' +
+    '\tGetHandleVerifier [0x00007FF6E3A95D7F+3843215]\n' +
+    '\tGetHandleVerifier [0x00007FF6E3795086+694166]\n' +
+    '\t(No symbol) [0x00007FF6E3670A88]\n' +
+    '\t(No symbol) [0x00007FF6E366CA94]\n' +
+    '\t(No symbol) [0x00007FF6E366CBC2]\n' +
+    '\t(No symbol) [0x00007FF6E365CC83]\n' +
+    '\tBaseThreadInitThunk [0x00007FFEEF277344+20]\n' +
+    '\tRtlUserThreadStart [0x00007FFEF11626B1+33]\n'
+}
+2023-10-24T15:00:57.887Z INFO webdriver: COMMAND findElements("css selector", "#hello")
+2023-10-24T15:00:57.887Z INFO webdriver: [POST] http://localhost:9515/session/845ae318096d04310e98f944b445f555/elements
+2023-10-24T15:00:57.887Z INFO webdriver: DATA { using: 'css selector', value: '#hello' }
+2023-10-24T15:00:57.898Z INFO webdriver: RESULT []
+2023-10-24T15:00:57.902Z INFO webdriver: COMMAND navigateTo("http://localhost:3000/hello")
+2023-10-24T15:00:57.902Z INFO webdriver: [POST] http://localhost:9515/session/845ae318096d04310e98f944b445f555/url
+2023-10-24T15:00:57.902Z INFO webdriver: DATA { url: 'http://localhost:3000/hello' }
+2023-10-24T15:00:58.778Z INFO webdriver: RESULT null
+2023-10-24T15:00:58.779Z INFO webdriver: COMMAND findElement("css selector", "#search")
+2023-10-24T15:00:58.779Z INFO webdriver: [POST] http://localhost:9515/session/845ae318096d04310e98f944b445f555/element
+2023-10-24T15:00:58.779Z INFO webdriver: DATA { using: 'css selector', value: '#search' }
+2023-10-24T15:00:58.791Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '519865A665BB24C2CB82D8690086AC6E_element_8'
+}
+2023-10-24T15:00:58.793Z INFO webdriver: COMMAND elementClear("519865A665BB24C2CB82D8690086AC6E_element_8")
+2023-10-24T15:00:58.793Z INFO webdriver: [POST] http://localhost:9515/session/845ae318096d04310e98f944b445f555/element/519865A665BB24C2CB82D8690086AC6E_element_8/clear
+2023-10-24T15:00:58.823Z INFO webdriver: RESULT null
+2023-10-24T15:00:58.823Z INFO webdriver: COMMAND elementSendKeys("519865A665BB24C2CB82D8690086AC6E_element_8", "sdfghj")
+2023-10-24T15:00:58.823Z INFO webdriver: [POST] http://localhost:9515/session/845ae318096d04310e98f944b445f555/element/519865A665BB24C2CB82D8690086AC6E_element_8/value
+2023-10-24T15:00:58.823Z INFO webdriver: DATA { text: 'sdfghj' }
+2023-10-24T15:00:58.912Z INFO webdriver: RESULT null
+2023-10-24T15:00:58.912Z INFO webdriver: COMMAND findElement("css selector", "#toggle")
+2023-10-24T15:00:58.912Z INFO webdriver: [POST] http://localhost:9515/session/845ae318096d04310e98f944b445f555/element
+2023-10-24T15:00:58.912Z INFO webdriver: DATA { using: 'css selector', value: '#toggle' }
+2023-10-24T15:00:58.939Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '519865A665BB24C2CB82D8690086AC6E_element_12'
+}
+2023-10-24T15:00:58.941Z INFO webdriver: COMMAND elementClick("519865A665BB24C2CB82D8690086AC6E_element_12")
+2023-10-24T15:00:58.941Z INFO webdriver: [POST] http://localhost:9515/session/845ae318096d04310e98f944b445f555/element/519865A665BB24C2CB82D8690086AC6E_element_12/click
+2023-10-24T15:00:58.976Z INFO webdriver: RESULT null
+2023-10-24T15:00:58.977Z INFO webdriver: COMMAND findElement("css selector", "#hello")
+2023-10-24T15:00:58.977Z INFO webdriver: [POST] http://localhost:9515/session/845ae318096d04310e98f944b445f555/element
+2023-10-24T15:00:58.977Z INFO webdriver: DATA { using: 'css selector', value: '#hello' }
+2023-10-24T15:00:58.988Z INFO webdriver: RESULT {
+  error: 'no such element',
+  message: 'no such element: Unable to locate element: {"method":"css selector","selector":"#hello"}\n' +
+    '  (Session info: chrome=118.0.5993.89)',
+  stacktrace: '\tGetHandleVerifier [0x00007FF6E36F8EF2+54786]\n' +
+    '\t(No symbol) [0x00007FF6E3665612]\n' +
+    '\t(No symbol) [0x00007FF6E351A64B]\n' +
+    '\t(No symbol) [0x00007FF6E355B79C]\n' +
+    '\t(No symbol) [0x00007FF6E355B91C]\n' +
+    '\t(No symbol) [0x00007FF6E3596D87]\n' +
+    '\t(No symbol) [0x00007FF6E357BEAF]\n' +
+    '\t(No symbol) [0x00007FF6E3594D02]\n' +
+    '\t(No symbol) [0x00007FF6E357BC43]\n' +
+    '\t(No symbol) [0x00007FF6E3550941]\n' +
+    '\t(No symbol) [0x00007FF6E3551B84]\n' +
+    '\tGetHandleVerifier [0x00007FF6E3A47F52+3524194]\n' +
+    '\tGetHandleVerifier [0x00007FF6E3A9D800+3874576]\n' +
+    '\tGetHandleVerifier [0x00007FF6E3A95D7F+3843215]\n' +
+    '\tGetHandleVerifier [0x00007FF6E3795086+694166]\n' +
+    '\t(No symbol) [0x00007FF6E3670A88]\n' +
+    '\t(No symbol) [0x00007FF6E366CA94]\n' +
+    '\t(No symbol) [0x00007FF6E366CBC2]\n' +
+    '\t(No symbol) [0x00007FF6E365CC83]\n' +
+    '\tBaseThreadInitThunk [0x00007FFEEF277344+20]\n' +
+    '\tRtlUserThreadStart [0x00007FFEF11626B1+33]\n'
+}
+2023-10-24T15:00:58.991Z INFO webdriver: COMMAND findElements("css selector", "#hello")
+2023-10-24T15:00:58.991Z INFO webdriver: [POST] http://localhost:9515/session/845ae318096d04310e98f944b445f555/elements
+2023-10-24T15:00:58.991Z INFO webdriver: DATA { using: 'css selector', value: '#hello' }
+2023-10-24T15:00:59.000Z INFO webdriver: RESULT []
+2023-10-24T15:00:59.003Z INFO webdriver: COMMAND getLogTypes()
+2023-10-24T15:00:59.003Z INFO webdriver: [GET] http://localhost:9515/session/845ae318096d04310e98f944b445f555/se/log/types
+2023-10-24T15:00:59.006Z INFO webdriver: RESULT [ 'browser', 'driver' ]
+2023-10-24T15:00:59.006Z INFO webdriver: COMMAND getLogs("driver")
+2023-10-24T15:00:59.007Z INFO webdriver: COMMAND getLogs("browser")
+2023-10-24T15:00:59.007Z INFO webdriver: [POST] http://localhost:9515/session/845ae318096d04310e98f944b445f555/se/log
+2023-10-24T15:00:59.007Z INFO webdriver: DATA { type: 'driver' }
+2023-10-24T15:00:59.007Z INFO webdriver: [POST] http://localhost:9515/session/845ae318096d04310e98f944b445f555/se/log
+2023-10-24T15:00:59.007Z INFO webdriver: DATA { type: 'browser' }
+2023-10-24T15:00:59.011Z INFO webdriver: RESULT []
+2023-10-24T15:00:59.012Z INFO webdriver: RESULT [
+  {
+    level: 'SEVERE',
+    message: "http://localhost:3000/hello 0 Error while trying to use the following icon from the Manifest: http://localhost:3000/logo192.png (Download error or resource isn't a valid image)",
+    source: 'other',
+    timestamp: 1698159658453
+  }
+]
+2023-10-24T15:00:59.014Z INFO webdriver: COMMAND deleteSession()
+2023-10-24T15:00:59.014Z INFO webdriver: [DELETE] http://localhost:9515/session/845ae318096d04310e98f944b445f555
+2023-10-24T15:00:59.066Z INFO webdriver: RESULT null

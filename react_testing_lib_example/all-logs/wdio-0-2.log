@@ -1,0 +1,386 @@
+2023-10-24T14:35:38.281Z INFO @wdio/local-runner: Run worker command: run
+2023-10-24T14:35:38.785Z INFO webdriver: Initiate new session using the WebDriver protocol
+2023-10-24T14:35:38.785Z INFO @wdio/utils: Connecting to existing driver at http://localhost:9515/
+2023-10-24T14:35:39.151Z INFO webdriver: [POST] http://localhost:9515/session
+2023-10-24T14:35:39.151Z INFO webdriver: DATA {
+  capabilities: {
+    alwaysMatch: {
+      browserName: 'chrome',
+      acceptInsecureCerts: true,
+      'goog:chromeOptions': [Object]
+    },
+    firstMatch: [ {} ]
+  },
+  desiredCapabilities: {
+    browserName: 'chrome',
+    acceptInsecureCerts: true,
+    'goog:chromeOptions': { args: [Array], extensions: [] }
+  }
+}
+2023-10-24T14:35:41.615Z INFO webdriver: COMMAND navigateTo("http://localhost:3000/users-test")
+2023-10-24T14:35:41.616Z INFO webdriver: [POST] http://localhost:9515/session/370d35fa307640fb0272105557e13c6a/url
+2023-10-24T14:35:41.617Z INFO webdriver: DATA { url: 'http://localhost:3000/users-test' }
+2023-10-24T14:35:45.657Z INFO webdriver: RESULT null
+2023-10-24T14:35:45.661Z INFO webdriver: COMMAND findElement("css selector", "#users-loading")
+2023-10-24T14:35:45.661Z INFO webdriver: [POST] http://localhost:9515/session/370d35fa307640fb0272105557e13c6a/element
+2023-10-24T14:35:45.661Z INFO webdriver: DATA { using: 'css selector', value: '#users-loading' }
+2023-10-24T14:35:46.453Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'DF5AFE4EB071D5A6DFCB4C51E219B74C_element_2'
+}
+2023-10-24T14:35:46.467Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+2023-10-24T14:35:46.467Z INFO webdriver: [POST] http://localhost:9515/session/370d35fa307640fb0272105557e13c6a/execute/sync
+2023-10-24T14:35:46.468Z INFO webdriver: DATA {
+  script: 'isElementDisplayed(...) [8007 bytes]',
+  args: [
+    {
+      'element-6066-11e4-a52e-4f735466cecf': 'DF5AFE4EB071D5A6DFCB4C51E219B74C_element_2',
+      ELEMENT: 'DF5AFE4EB071D5A6DFCB4C51E219B74C_element_2'
+    }
+  ]
+}
+2023-10-24T14:35:46.479Z INFO webdriver: RESULT true
+2023-10-24T14:35:46.482Z INFO webdriver: COMMAND findElement("css selector", "#users-list")
+2023-10-24T14:35:46.482Z INFO webdriver: [POST] http://localhost:9515/session/370d35fa307640fb0272105557e13c6a/element
+2023-10-24T14:35:46.482Z INFO webdriver: DATA { using: 'css selector', value: '#users-list' }
+2023-10-24T14:35:46.500Z INFO webdriver: RESULT {
+  error: 'no such element',
+  message: 'no such element: Unable to locate element: {"method":"css selector","selector":"#users-list"}\n' +
+    '  (Session info: chrome=118.0.5993.89)',
+  stacktrace: '\tGetHandleVerifier [0x00007FF6E36F8EF2+54786]\n' +
+    '\t(No symbol) [0x00007FF6E3665612]\n' +
+    '\t(No symbol) [0x00007FF6E351A64B]\n' +
+    '\t(No symbol) [0x00007FF6E355B79C]\n' +
+    '\t(No symbol) [0x00007FF6E355B91C]\n' +
+    '\t(No symbol) [0x00007FF6E3596D87]\n' +
+    '\t(No symbol) [0x00007FF6E357BEAF]\n' +
+    '\t(No symbol) [0x00007FF6E3594D02]\n' +
+    '\t(No symbol) [0x00007FF6E357BC43]\n' +
+    '\t(No symbol) [0x00007FF6E3550941]\n' +
+    '\t(No symbol) [0x00007FF6E3551B84]\n' +
+    '\tGetHandleVerifier [0x00007FF6E3A47F52+3524194]\n' +
+    '\tGetHandleVerifier [0x00007FF6E3A9D800+3874576]\n' +
+    '\tGetHandleVerifier [0x00007FF6E3A95D7F+3843215]\n' +
+    '\tGetHandleVerifier [0x00007FF6E3795086+694166]\n' +
+    '\t(No symbol) [0x00007FF6E3670A88]\n' +
+    '\t(No symbol) [0x00007FF6E366CA94]\n' +
+    '\t(No symbol) [0x00007FF6E366CBC2]\n' +
+    '\t(No symbol) [0x00007FF6E365CC83]\n' +
+    '\tBaseThreadInitThunk [0x00007FFEEF277344+20]\n' +
+    '\tRtlUserThreadStart [0x00007FFEF11626B1+33]\n'
+}
+2023-10-24T14:35:46.504Z INFO webdriver: COMMAND findElement("css selector", "#users-list")
+2023-10-24T14:35:46.504Z INFO webdriver: [POST] http://localhost:9515/session/370d35fa307640fb0272105557e13c6a/element
+2023-10-24T14:35:46.504Z INFO webdriver: DATA { using: 'css selector', value: '#users-list' }
+2023-10-24T14:35:46.518Z INFO webdriver: RESULT {
+  error: 'no such element',
+  message: 'no such element: Unable to locate element: {"method":"css selector","selector":"#users-list"}\n' +
+    '  (Session info: chrome=118.0.5993.89)',
+  stacktrace: '\tGetHandleVerifier [0x00007FF6E36F8EF2+54786]\n' +
+    '\t(No symbol) [0x00007FF6E3665612]\n' +
+    '\t(No symbol) [0x00007FF6E351A64B]\n' +
+    '\t(No symbol) [0x00007FF6E355B79C]\n' +
+    '\t(No symbol) [0x00007FF6E355B91C]\n' +
+    '\t(No symbol) [0x00007FF6E3596D87]\n' +
+    '\t(No symbol) [0x00007FF6E357BEAF]\n' +
+    '\t(No symbol) [0x00007FF6E3594D02]\n' +
+    '\t(No symbol) [0x00007FF6E357BC43]\n' +
+    '\t(No symbol) [0x00007FF6E3550941]\n' +
+    '\t(No symbol) [0x00007FF6E3551B84]\n' +
+    '\tGetHandleVerifier [0x00007FF6E3A47F52+3524194]\n' +
+    '\tGetHandleVerifier [0x00007FF6E3A9D800+3874576]\n' +
+    '\tGetHandleVerifier [0x00007FF6E3A95D7F+3843215]\n' +
+    '\tGetHandleVerifier [0x00007FF6E3795086+694166]\n' +
+    '\t(No symbol) [0x00007FF6E3670A88]\n' +
+    '\t(No symbol) [0x00007FF6E366CA94]\n' +
+    '\t(No symbol) [0x00007FF6E366CBC2]\n' +
+    '\t(No symbol) [0x00007FF6E365CC83]\n' +
+    '\tBaseThreadInitThunk [0x00007FFEEF277344+20]\n' +
+    '\tRtlUserThreadStart [0x00007FFEF11626B1+33]\n'
+}
+2023-10-24T14:35:47.007Z INFO webdriver: COMMAND findElement("css selector", "#users-list")
+2023-10-24T14:35:47.007Z INFO webdriver: [POST] http://localhost:9515/session/370d35fa307640fb0272105557e13c6a/element
+2023-10-24T14:35:47.007Z INFO webdriver: DATA { using: 'css selector', value: '#users-list' }
+2023-10-24T14:35:47.029Z INFO webdriver: RESULT {
+  error: 'no such element',
+  message: 'no such element: Unable to locate element: {"method":"css selector","selector":"#users-list"}\n' +
+    '  (Session info: chrome=118.0.5993.89)',
+  stacktrace: '\tGetHandleVerifier [0x00007FF6E36F8EF2+54786]\n' +
+    '\t(No symbol) [0x00007FF6E3665612]\n' +
+    '\t(No symbol) [0x00007FF6E351A64B]\n' +
+    '\t(No symbol) [0x00007FF6E355B79C]\n' +
+    '\t(No symbol) [0x00007FF6E355B91C]\n' +
+    '\t(No symbol) [0x00007FF6E3596D87]\n' +
+    '\t(No symbol) [0x00007FF6E357BEAF]\n' +
+    '\t(No symbol) [0x00007FF6E3594D02]\n' +
+    '\t(No symbol) [0x00007FF6E357BC43]\n' +
+    '\t(No symbol) [0x00007FF6E3550941]\n' +
+    '\t(No symbol) [0x00007FF6E3551B84]\n' +
+    '\tGetHandleVerifier [0x00007FF6E3A47F52+3524194]\n' +
+    '\tGetHandleVerifier [0x00007FF6E3A9D800+3874576]\n' +
+    '\tGetHandleVerifier [0x00007FF6E3A95D7F+3843215]\n' +
+    '\tGetHandleVerifier [0x00007FF6E3795086+694166]\n' +
+    '\t(No symbol) [0x00007FF6E3670A88]\n' +
+    '\t(No symbol) [0x00007FF6E366CA94]\n' +
+    '\t(No symbol) [0x00007FF6E366CBC2]\n' +
+    '\t(No symbol) [0x00007FF6E365CC83]\n' +
+    '\tBaseThreadInitThunk [0x00007FFEEF277344+20]\n' +
+    '\tRtlUserThreadStart [0x00007FFEF11626B1+33]\n'
+}
+2023-10-24T14:35:47.518Z INFO webdriver: COMMAND findElement("css selector", "#users-list")
+2023-10-24T14:35:47.518Z INFO webdriver: [POST] http://localhost:9515/session/370d35fa307640fb0272105557e13c6a/element
+2023-10-24T14:35:47.519Z INFO webdriver: DATA { using: 'css selector', value: '#users-list' }
+2023-10-24T14:35:47.540Z INFO webdriver: RESULT {
+  error: 'no such element',
+  message: 'no such element: Unable to locate element: {"method":"css selector","selector":"#users-list"}\n' +
+    '  (Session info: chrome=118.0.5993.89)',
+  stacktrace: '\tGetHandleVerifier [0x00007FF6E36F8EF2+54786]\n' +
+    '\t(No symbol) [0x00007FF6E3665612]\n' +
+    '\t(No symbol) [0x00007FF6E351A64B]\n' +
+    '\t(No symbol) [0x00007FF6E355B79C]\n' +
+    '\t(No symbol) [0x00007FF6E355B91C]\n' +
+    '\t(No symbol) [0x00007FF6E3596D87]\n' +
+    '\t(No symbol) [0x00007FF6E357BEAF]\n' +
+    '\t(No symbol) [0x00007FF6E3594D02]\n' +
+    '\t(No symbol) [0x00007FF6E357BC43]\n' +
+    '\t(No symbol) [0x00007FF6E3550941]\n' +
+    '\t(No symbol) [0x00007FF6E3551B84]\n' +
+    '\tGetHandleVerifier [0x00007FF6E3A47F52+3524194]\n' +
+    '\tGetHandleVerifier [0x00007FF6E3A9D800+3874576]\n' +
+    '\tGetHandleVerifier [0x00007FF6E3A95D7F+3843215]\n' +
+    '\tGetHandleVerifier [0x00007FF6E3795086+694166]\n' +
+    '\t(No symbol) [0x00007FF6E3670A88]\n' +
+    '\t(No symbol) [0x00007FF6E366CA94]\n' +
+    '\t(No symbol) [0x00007FF6E366CBC2]\n' +
+    '\t(No symbol) [0x00007FF6E365CC83]\n' +
+    '\tBaseThreadInitThunk [0x00007FFEEF277344+20]\n' +
+    '\tRtlUserThreadStart [0x00007FFEF11626B1+33]\n'
+}
+2023-10-24T14:35:48.018Z INFO webdriver: COMMAND findElement("css selector", "#users-list")
+2023-10-24T14:35:48.019Z INFO webdriver: [POST] http://localhost:9515/session/370d35fa307640fb0272105557e13c6a/element
+2023-10-24T14:35:48.019Z INFO webdriver: DATA { using: 'css selector', value: '#users-list' }
+2023-10-24T14:35:48.041Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'DF5AFE4EB071D5A6DFCB4C51E219B74C_element_5'
+}
+2023-10-24T14:35:48.043Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+2023-10-24T14:35:48.043Z INFO webdriver: [POST] http://localhost:9515/session/370d35fa307640fb0272105557e13c6a/execute/sync
+2023-10-24T14:35:48.043Z INFO webdriver: DATA {
+  script: 'isElementDisplayed(...) [8007 bytes]',
+  args: [
+    {
+      'element-6066-11e4-a52e-4f735466cecf': 'DF5AFE4EB071D5A6DFCB4C51E219B74C_element_5',
+      ELEMENT: 'DF5AFE4EB071D5A6DFCB4C51E219B74C_element_5'
+    }
+  ]
+}
+2023-10-24T14:35:48.056Z INFO webdriver: RESULT true
+2023-10-24T14:35:48.058Z INFO webdriver: COMMAND navigateTo("http://localhost:3000/users-test")
+2023-10-24T14:35:48.058Z INFO webdriver: [POST] http://localhost:9515/session/370d35fa307640fb0272105557e13c6a/url
+2023-10-24T14:35:48.058Z INFO webdriver: DATA { url: 'http://localhost:3000/users-test' }
+2023-10-24T14:35:49.178Z INFO webdriver: RESULT null
+2023-10-24T14:35:49.179Z INFO webdriver: COMMAND findElement("css selector", "#users-loading")
+2023-10-24T14:35:49.179Z INFO webdriver: [POST] http://localhost:9515/session/370d35fa307640fb0272105557e13c6a/element
+2023-10-24T14:35:49.179Z INFO webdriver: DATA { using: 'css selector', value: '#users-loading' }
+2023-10-24T14:35:49.195Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'C523E92E59F1CE7ED3CECDCBFB8D9DB2_element_7'
+}
+2023-10-24T14:35:49.199Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+2023-10-24T14:35:49.199Z INFO webdriver: [POST] http://localhost:9515/session/370d35fa307640fb0272105557e13c6a/execute/sync
+2023-10-24T14:35:49.199Z INFO webdriver: DATA {
+  script: 'isElementDisplayed(...) [8007 bytes]',
+  args: [
+    {
+      'element-6066-11e4-a52e-4f735466cecf': 'C523E92E59F1CE7ED3CECDCBFB8D9DB2_element_7',
+      ELEMENT: 'C523E92E59F1CE7ED3CECDCBFB8D9DB2_element_7'
+    }
+  ]
+}
+2023-10-24T14:35:49.217Z INFO webdriver: RESULT true
+2023-10-24T14:35:49.218Z INFO webdriver: COMMAND findElement("css selector", "#users-list")
+2023-10-24T14:35:49.218Z INFO webdriver: [POST] http://localhost:9515/session/370d35fa307640fb0272105557e13c6a/element
+2023-10-24T14:35:49.218Z INFO webdriver: DATA { using: 'css selector', value: '#users-list' }
+2023-10-24T14:35:49.236Z INFO webdriver: RESULT {
+  error: 'no such element',
+  message: 'no such element: Unable to locate element: {"method":"css selector","selector":"#users-list"}\n' +
+    '  (Session info: chrome=118.0.5993.89)',
+  stacktrace: '\tGetHandleVerifier [0x00007FF6E36F8EF2+54786]\n' +
+    '\t(No symbol) [0x00007FF6E3665612]\n' +
+    '\t(No symbol) [0x00007FF6E351A64B]\n' +
+    '\t(No symbol) [0x00007FF6E355B79C]\n' +
+    '\t(No symbol) [0x00007FF6E355B91C]\n' +
+    '\t(No symbol) [0x00007FF6E3596D87]\n' +
+    '\t(No symbol) [0x00007FF6E357BEAF]\n' +
+    '\t(No symbol) [0x00007FF6E3594D02]\n' +
+    '\t(No symbol) [0x00007FF6E357BC43]\n' +
+    '\t(No symbol) [0x00007FF6E3550941]\n' +
+    '\t(No symbol) [0x00007FF6E3551B84]\n' +
+    '\tGetHandleVerifier [0x00007FF6E3A47F52+3524194]\n' +
+    '\tGetHandleVerifier [0x00007FF6E3A9D800+3874576]\n' +
+    '\tGetHandleVerifier [0x00007FF6E3A95D7F+3843215]\n' +
+    '\tGetHandleVerifier [0x00007FF6E3795086+694166]\n' +
+    '\t(No symbol) [0x00007FF6E3670A88]\n' +
+    '\t(No symbol) [0x00007FF6E366CA94]\n' +
+    '\t(No symbol) [0x00007FF6E366CBC2]\n' +
+    '\t(No symbol) [0x00007FF6E365CC83]\n' +
+    '\tBaseThreadInitThunk [0x00007FFEEF277344+20]\n' +
+    '\tRtlUserThreadStart [0x00007FFEF11626B1+33]\n'
+}
+2023-10-24T14:35:49.239Z INFO webdriver: COMMAND findElement("css selector", "#users-list")
+2023-10-24T14:35:49.239Z INFO webdriver: [POST] http://localhost:9515/session/370d35fa307640fb0272105557e13c6a/element
+2023-10-24T14:35:49.239Z INFO webdriver: DATA { using: 'css selector', value: '#users-list' }
+2023-10-24T14:35:49.250Z INFO webdriver: RESULT {
+  error: 'no such element',
+  message: 'no such element: Unable to locate element: {"method":"css selector","selector":"#users-list"}\n' +
+    '  (Session info: chrome=118.0.5993.89)',
+  stacktrace: '\tGetHandleVerifier [0x00007FF6E36F8EF2+54786]\n' +
+    '\t(No symbol) [0x00007FF6E3665612]\n' +
+    '\t(No symbol) [0x00007FF6E351A64B]\n' +
+    '\t(No symbol) [0x00007FF6E355B79C]\n' +
+    '\t(No symbol) [0x00007FF6E355B91C]\n' +
+    '\t(No symbol) [0x00007FF6E3596D87]\n' +
+    '\t(No symbol) [0x00007FF6E357BEAF]\n' +
+    '\t(No symbol) [0x00007FF6E3594D02]\n' +
+    '\t(No symbol) [0x00007FF6E357BC43]\n' +
+    '\t(No symbol) [0x00007FF6E3550941]\n' +
+    '\t(No symbol) [0x00007FF6E3551B84]\n' +
+    '\tGetHandleVerifier [0x00007FF6E3A47F52+3524194]\n' +
+    '\tGetHandleVerifier [0x00007FF6E3A9D800+3874576]\n' +
+    '\tGetHandleVerifier [0x00007FF6E3A95D7F+3843215]\n' +
+    '\tGetHandleVerifier [0x00007FF6E3795086+694166]\n' +
+    '\t(No symbol) [0x00007FF6E3670A88]\n' +
+    '\t(No symbol) [0x00007FF6E366CA94]\n' +
+    '\t(No symbol) [0x00007FF6E366CBC2]\n' +
+    '\t(No symbol) [0x00007FF6E365CC83]\n' +
+    '\tBaseThreadInitThunk [0x00007FFEEF277344+20]\n' +
+    '\tRtlUserThreadStart [0x00007FFEF11626B1+33]\n'
+}
+2023-10-24T14:35:49.745Z INFO webdriver: COMMAND findElement("css selector", "#users-list")
+2023-10-24T14:35:49.746Z INFO webdriver: [POST] http://localhost:9515/session/370d35fa307640fb0272105557e13c6a/element
+2023-10-24T14:35:49.746Z INFO webdriver: DATA { using: 'css selector', value: '#users-list' }
+2023-10-24T14:35:49.768Z INFO webdriver: RESULT {
+  error: 'no such element',
+  message: 'no such element: Unable to locate element: {"method":"css selector","selector":"#users-list"}\n' +
+    '  (Session info: chrome=118.0.5993.89)',
+  stacktrace: '\tGetHandleVerifier [0x00007FF6E36F8EF2+54786]\n' +
+    '\t(No symbol) [0x00007FF6E3665612]\n' +
+    '\t(No symbol) [0x00007FF6E351A64B]\n' +
+    '\t(No symbol) [0x00007FF6E355B79C]\n' +
+    '\t(No symbol) [0x00007FF6E355B91C]\n' +
+    '\t(No symbol) [0x00007FF6E3596D87]\n' +
+    '\t(No symbol) [0x00007FF6E357BEAF]\n' +
+    '\t(No symbol) [0x00007FF6E3594D02]\n' +
+    '\t(No symbol) [0x00007FF6E357BC43]\n' +
+    '\t(No symbol) [0x00007FF6E3550941]\n' +
+    '\t(No symbol) [0x00007FF6E3551B84]\n' +
+    '\tGetHandleVerifier [0x00007FF6E3A47F52+3524194]\n' +
+    '\tGetHandleVerifier [0x00007FF6E3A9D800+3874576]\n' +
+    '\tGetHandleVerifier [0x00007FF6E3A95D7F+3843215]\n' +
+    '\tGetHandleVerifier [0x00007FF6E3795086+694166]\n' +
+    '\t(No symbol) [0x00007FF6E3670A88]\n' +
+    '\t(No symbol) [0x00007FF6E366CA94]\n' +
+    '\t(No symbol) [0x00007FF6E366CBC2]\n' +
+    '\t(No symbol) [0x00007FF6E365CC83]\n' +
+    '\tBaseThreadInitThunk [0x00007FFEEF277344+20]\n' +
+    '\tRtlUserThreadStart [0x00007FFEF11626B1+33]\n'
+}
+2023-10-24T14:35:50.240Z INFO webdriver: COMMAND findElement("css selector", "#users-list")
+2023-10-24T14:35:50.240Z INFO webdriver: [POST] http://localhost:9515/session/370d35fa307640fb0272105557e13c6a/element
+2023-10-24T14:35:50.241Z INFO webdriver: DATA { using: 'css selector', value: '#users-list' }
+2023-10-24T14:35:50.261Z INFO webdriver: RESULT {
+  error: 'no such element',
+  message: 'no such element: Unable to locate element: {"method":"css selector","selector":"#users-list"}\n' +
+    '  (Session info: chrome=118.0.5993.89)',
+  stacktrace: '\tGetHandleVerifier [0x00007FF6E36F8EF2+54786]\n' +
+    '\t(No symbol) [0x00007FF6E3665612]\n' +
+    '\t(No symbol) [0x00007FF6E351A64B]\n' +
+    '\t(No symbol) [0x00007FF6E355B79C]\n' +
+    '\t(No symbol) [0x00007FF6E355B91C]\n' +
+    '\t(No symbol) [0x00007FF6E3596D87]\n' +
+    '\t(No symbol) [0x00007FF6E357BEAF]\n' +
+    '\t(No symbol) [0x00007FF6E3594D02]\n' +
+    '\t(No symbol) [0x00007FF6E357BC43]\n' +
+    '\t(No symbol) [0x00007FF6E3550941]\n' +
+    '\t(No symbol) [0x00007FF6E3551B84]\n' +
+    '\tGetHandleVerifier [0x00007FF6E3A47F52+3524194]\n' +
+    '\tGetHandleVerifier [0x00007FF6E3A9D800+3874576]\n' +
+    '\tGetHandleVerifier [0x00007FF6E3A95D7F+3843215]\n' +
+    '\tGetHandleVerifier [0x00007FF6E3795086+694166]\n' +
+    '\t(No symbol) [0x00007FF6E3670A88]\n' +
+    '\t(No symbol) [0x00007FF6E366CA94]\n' +
+    '\t(No symbol) [0x00007FF6E366CBC2]\n' +
+    '\t(No symbol) [0x00007FF6E365CC83]\n' +
+    '\tBaseThreadInitThunk [0x00007FFEEF277344+20]\n' +
+    '\tRtlUserThreadStart [0x00007FFEF11626B1+33]\n'
+}
+2023-10-24T14:35:50.751Z INFO webdriver: COMMAND findElement("css selector", "#users-list")
+2023-10-24T14:35:50.752Z INFO webdriver: [POST] http://localhost:9515/session/370d35fa307640fb0272105557e13c6a/element
+2023-10-24T14:35:50.752Z INFO webdriver: DATA { using: 'css selector', value: '#users-list' }
+2023-10-24T14:35:50.770Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'C523E92E59F1CE7ED3CECDCBFB8D9DB2_element_10'
+}
+2023-10-24T14:35:50.774Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+2023-10-24T14:35:50.774Z INFO webdriver: [POST] http://localhost:9515/session/370d35fa307640fb0272105557e13c6a/execute/sync
+2023-10-24T14:35:50.774Z INFO webdriver: DATA {
+  script: 'isElementDisplayed(...) [8007 bytes]',
+  args: [
+    {
+      'element-6066-11e4-a52e-4f735466cecf': 'C523E92E59F1CE7ED3CECDCBFB8D9DB2_element_10',
+      ELEMENT: 'C523E92E59F1CE7ED3CECDCBFB8D9DB2_element_10'
+    }
+  ]
+}
+2023-10-24T14:35:50.792Z INFO webdriver: RESULT true
+2023-10-24T14:35:50.801Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+2023-10-24T14:35:50.801Z INFO webdriver: [POST] http://localhost:9515/session/370d35fa307640fb0272105557e13c6a/execute/sync
+2023-10-24T14:35:50.801Z INFO webdriver: DATA { script: '<minified function> [14410 bytes]', args: [] }
+2023-10-24T14:35:50.812Z INFO webdriver: RESULT null
+2023-10-24T14:35:50.812Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+2023-10-24T14:35:50.812Z INFO webdriver: [POST] http://localhost:9515/session/370d35fa307640fb0272105557e13c6a/execute/sync
+2023-10-24T14:35:50.812Z INFO webdriver: DATA { script: 'waitToLoadReact(...) [97 bytes]', args: [] }
+2023-10-24T14:35:50.821Z INFO webdriver: RESULT null
+2023-10-24T14:35:50.821Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+2023-10-24T14:35:50.821Z INFO webdriver: [POST] http://localhost:9515/session/370d35fa307640fb0272105557e13c6a/execute/sync
+2023-10-24T14:35:50.821Z INFO webdriver: DATA { script: 'react(...) [1020 bytes]', args: [ 'User', {}, {} ] }
+2023-10-24T14:35:50.830Z WARN webdriver: Request failed with status 500 due to javascript error: Could not find the root element of your application
+  (Session info: chrome=118.0.5993.89)
+2023-10-24T14:35:50.830Z INFO webdriver: Retrying 1/3
+2023-10-24T14:35:50.830Z INFO webdriver: [POST] http://localhost:9515/session/370d35fa307640fb0272105557e13c6a/execute/sync
+2023-10-24T14:35:50.830Z INFO webdriver: DATA { script: 'react(...) [1020 bytes]', args: [ 'User', {}, {} ] }
+2023-10-24T14:35:50.838Z WARN webdriver: Request failed with status 500 due to javascript error: Could not find the root element of your application
+  (Session info: chrome=118.0.5993.89)
+2023-10-24T14:35:50.838Z INFO webdriver: Retrying 2/3
+2023-10-24T14:35:50.838Z INFO webdriver: [POST] http://localhost:9515/session/370d35fa307640fb0272105557e13c6a/execute/sync
+2023-10-24T14:35:50.838Z INFO webdriver: DATA { script: 'react(...) [1020 bytes]', args: [ 'User', {}, {} ] }
+2023-10-24T14:35:50.845Z WARN webdriver: Request failed with status 500 due to javascript error: Could not find the root element of your application
+  (Session info: chrome=118.0.5993.89)
+2023-10-24T14:35:50.845Z INFO webdriver: Retrying 3/3
+2023-10-24T14:35:50.845Z INFO webdriver: [POST] http://localhost:9515/session/370d35fa307640fb0272105557e13c6a/execute/sync
+2023-10-24T14:35:50.845Z INFO webdriver: DATA { script: 'react(...) [1020 bytes]', args: [ 'User', {}, {} ] }
+2023-10-24T14:35:50.852Z ERROR webdriver: Request failed with status 500 due to javascript error: javascript error: Could not find the root element of your application
+  (Session info: chrome=118.0.5993.89)
+2023-10-24T14:35:50.855Z INFO webdriver: COMMAND getLogTypes()
+2023-10-24T14:35:50.855Z INFO webdriver: [GET] http://localhost:9515/session/370d35fa307640fb0272105557e13c6a/se/log/types
+2023-10-24T14:35:50.858Z INFO webdriver: RESULT [ 'browser', 'driver' ]
+2023-10-24T14:35:50.858Z INFO webdriver: COMMAND getLogs("driver")
+2023-10-24T14:35:50.858Z INFO webdriver: COMMAND getLogs("browser")
+2023-10-24T14:35:50.858Z INFO webdriver: [POST] http://localhost:9515/session/370d35fa307640fb0272105557e13c6a/se/log
+2023-10-24T14:35:50.858Z INFO webdriver: DATA { type: 'driver' }
+2023-10-24T14:35:50.859Z INFO webdriver: [POST] http://localhost:9515/session/370d35fa307640fb0272105557e13c6a/se/log
+2023-10-24T14:35:50.859Z INFO webdriver: DATA { type: 'browser' }
+2023-10-24T14:35:50.863Z INFO webdriver: RESULT []
+2023-10-24T14:35:50.864Z INFO webdriver: RESULT [
+  {
+    level: 'SEVERE',
+    message: 'http://localhost:3000/static/js/bundle.js 46331:33 "Warning: Each child in a list should have a unique \\"key\\" prop.%s%s See https://reactjs.org/link/warning-keys for more information.%s" "\\n\\nCheck the render method of `UsersForTest`." "" "\\n    at User (http://localhost:3000/static/js/bundle.js:321:3)\\n    at UsersForTest (http://localhost:3000/static/js/bundle.js:403:76)\\n    at RenderedRoute (http://localhost:3000/static/js/bundle.js:45389:5)\\n    at Routes (http://localhost:3000/static/js/bundle.js:46011:5)\\n    at AppRouter\\n    at App\\n    at Router (http://localhost:3000/static/js/bundle.js:45949:15)\\n    at BrowserRouter (http://localhost:3000/static/js/bundle.js:44005:5)\\n    at Provider (http://localhost:3000/static/js/bundle.js:40966:3)"',
+    source: 'console-api',
+    timestamp: 1698158147949
+  },
+  {
+    level: 'SEVERE',
+    message: 'http://localhost:3000/static/js/bundle.js 46331:33 "Warning: Each child in a list should have a unique \\"key\\" prop.%s%s See https://reactjs.org/link/warning-keys for more information.%s" "\\n\\nCheck the render method of `UsersForTest`." "" "\\n    at User (http://localhost:3000/static/js/bundle.js:321:3)\\n    at UsersForTest (http://localhost:3000/static/js/bundle.js:403:76)\\n    at RenderedRoute (http://localhost:3000/static/js/bundle.js:45389:5)\\n    at Routes (http://localhost:3000/static/js/bundle.js:46011:5)\\n    at AppRouter\\n    at App\\n    at Router (http://localhost:3000/static/js/bundle.js:45949:15)\\n    at BrowserRouter (http://localhost:3000/static/js/bundle.js:44005:5)\\n    at Provider (http://localhost:3000/static/js/bundle.js:40966:3)"',
+    source: 'console-api',
+    timestamp: 1698158150369
+  }
+]
+2023-10-24T14:35:50.868Z INFO webdriver: COMMAND deleteSession()
+2023-10-24T14:35:50.868Z INFO webdriver: [DELETE] http://localhost:9515/session/370d35fa307640fb0272105557e13c6a
+2023-10-24T14:35:50.969Z INFO webdriver: RESULT null

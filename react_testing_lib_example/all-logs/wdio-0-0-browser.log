@@ -1,0 +1,1 @@
+{"level":"SEVERE","message":"http://localhost:3000/hello 0 Error while trying to use the following icon from the Manifest: http://localhost:3000/logo192.png (Download error or resource isn't a valid image)","source":"other","timestamp":1698159658453}
